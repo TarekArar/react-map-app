@@ -122,9 +122,11 @@ export default class App extends React.Component {
           </MapView.Marker>
          )
         })}
+       
 
         
        </MapView>
+       <Button title="Press me" style={{ position: 'absolute', top: 100, left: 50 }}/>
        
        
       
@@ -141,7 +143,7 @@ const styles = StyleSheet.create({
   },
   map: {
     ...StyleSheet.absoluteFillObject,
-    flex: 1
+    flex: 1,
   },
   imagemarker:{
     width : 40,
@@ -159,6 +161,10 @@ const styles = StyleSheet.create({
   contentTitle: {
     fontSize: 20,
     marginBottom: 12,
+  },
+  switch_button: {
+    marginBottom : 0,
+    justifyContent: 'center'
   }
  });
  
